@@ -6,17 +6,12 @@
 /* 2. Give it a margin of 10px */
 
 /* 3. Font size should be twice the normal size  */
-h1, h2 {
-  text-align: center;
-  margin: 10px;
-  font-size: 200%;
-}
 
-
-
-
-
-
+h1, h2{
+	text-align: center;
+	margin:10px;
+	font-size:200%
+  }
 
   /******* style the grid container  *******/
 
@@ -39,21 +34,18 @@ h1, h2 {
   /* 9. Round the corners */
 
 
-
-  .grid {
-    width: 800px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    background-color: #91f321;
-    background-image: url('../images/background.jpg');
-    border: 3px solid black;
-    border-radius: 20px;
-    justify-content: center;
-  }
-
-
+.grid {
+	width: 800px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: 200px 200px 200px;
+	grid-gap: 10px;
+	background-color: #91f321;
+	background-image:url("../images/background.jpg");
+	border: 3px solid black;
+	border-radius: 20px	;	
+	justify-content: space-around;
+}
 
 
 
@@ -70,18 +62,13 @@ h1, h2 {
 
 /* 5. Set a font-size of 30px   */
 
-.item1, .item2, .item3, .item4, .item5, .item_a, .item_b, .item_c, .item_d, .item_e{
-  border: 5px solid white;
-  background-color: rgba(231, 157, 224, 0.5);
-  text-align: center;
-  padding: 20px;
-  font-size: 30px;
-  justify-content: center;
-  align-content: center;
+.grid > div {
+	border: 5px solid white;
+	background-color: rgba(231, 157, 224, 0.5);
+	text-align: center;
+	padding: 20px;
+	font-size: 30px;
 }
-
-
-
 
 /* Go back to the parent container and play with ...*/
     /*justify-content:; */
@@ -90,45 +77,27 @@ h1, h2 {
 	/* align-content:; */
 
 
-
 /* Now try and style the individual boxes using grid-column  to match the picture at 1200px.*/
-.item1 {
-  grid-column: 1;
-  grid-row: 1;
+
+.item2, .item5{
+	grid-column-start: 3;
 }
-.item2{
-  grid-column: 3;
-  grid-row: 1;
-}
+
 .item3{
-  grid-column: 2;
-  grid-row: 2;
+	grid-column-start: 2;
 }
+
 .item4{
-  grid-column: 1;
-  grid-row: 3;
+	grid-column-start: 1;
 }
-.item5{
-  grid-column: 3;
-  grid-row: 3;
-}
-.item_a {
-  grid-column: 3;
-  grid-row: 3;
+
+
+.item_a{
+	grid-column-start: 3;
+	grid-row-start: 3;
+
 }
 .item_b{
-  grid-column: 3;
-  grid-row: 1;
-}
-.item_c{
-  grid-column: 1;
-  grid-row: 2;
-}
-.item_d{
-  grid-column: 2;
-  grid-row: 2;
-}
-.item_e{
-  grid-column: 3;
-  grid-row: 2;
+	grid-column-start: 3;
+
 }
